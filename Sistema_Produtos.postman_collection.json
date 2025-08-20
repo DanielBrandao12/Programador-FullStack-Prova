@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "cb9e99a7-760e-47a1-87d8-0258b98a0937",
+		"name": "Sistema_Produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9873315"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usernome",
+							"value": "user",
+							"type": "default"
+						},
+						{
+							"key": "senha",
+							"value": "12345",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/backend/api/auth/login.asp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"api",
+						"auth",
+						"login.asp"
+					],
+					"query": [
+						{
+							"key": "usernome",
+							"value": "user",
+							"disabled": true
+						},
+						{
+							"key": "senha",
+							"value": "12345",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "Daniel",
+							"type": "default"
+						},
+						{
+							"key": "usernome",
+							"value": "user",
+							"type": "default"
+						},
+						{
+							"key": "senha",
+							"value": "12345",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/backend/api/auth/register.asp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"api",
+						"auth",
+						"register.asp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/backend/api/products/index.asp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"api",
+						"products",
+						"index.asp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "Mouse Gamer RGB",
+							"type": "text"
+						},
+						{
+							"key": "preco",
+							"value": "120.00",
+							"type": "text"
+						},
+						{
+							"key": "quantidade",
+							"value": "25",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/backend/api/products/index.asp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"api",
+						"products",
+						"index.asp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Mouse Gamer RGB",
+							"type": "text"
+						},
+						{
+							"key": "preco",
+							"value": "120.00",
+							"type": "text"
+						},
+						{
+							"key": "quantidade",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/backend/api/products/index.asp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"api",
+						"products",
+						"index.asp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "DELETE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/backend/api/products/index.asp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"backend",
+						"api",
+						"products",
+						"index.asp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
