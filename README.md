@@ -9,7 +9,9 @@ Inclui: CRUD de produtos, login de usuários, filtros e ordenação de produtos.
 ## Pré-requisitos
 
 - VS Code (ou outro editor de código)  
-- SQL Server  
+- SQL Server Developer
+- SSMS – SQL Server Management Studio
+- Microsoft OLE DB Driver for SQL Server 
 - Postman (para testar API)  
 - IIS (Internet Information Services) com ASP clássico habilitado  
 - Navegador moderno para o frontend  
@@ -22,7 +24,7 @@ Inclui: CRUD de produtos, login de usuários, filtros e ordenação de produtos.
 3. Configurar um site no IIS apontando para a pasta **backend**.  
 4. Habilitar ASP clássico no IIS.  
 5. Configurar a **connection string** no arquivo `db.asp`.  
-6. Abrir o SQL Server e criar o banco de dados executando os scripts SQL que estão no repositório (incluindo DDL, DML, procedures, triggers e função).  
+6. Abrir o SQL Server e criar o banco de dados executando os scripts SQL que estão no repositório.  
 
 ## Rodando o frontend
 
