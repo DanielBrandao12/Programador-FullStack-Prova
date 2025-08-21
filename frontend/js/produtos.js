@@ -7,7 +7,7 @@ const usuarioLogado = sessionStorage.getItem("nome");
 document.addEventListener("DOMContentLoaded", () => {
     const token = sessionStorage.getItem("token");
     if (!token) {
-       window.location.href = "index.html";
+       window.location.href = "../index.html";
     }
 });
 
@@ -194,7 +194,7 @@ document.getElementById("btnSair").addEventListener("click", () => {
     sessionStorage.removeItem("token");
     sessionStorage.removeItem("userId");
     sessionStorage.removeItem("nome");
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 });
 
 // Inicializa
