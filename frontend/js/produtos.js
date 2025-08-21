@@ -7,7 +7,7 @@ const usuarioLogado = sessionStorage.getItem("nome");
 document.addEventListener("DOMContentLoaded", () => {
     const token = sessionStorage.getItem("token");
     if (!token) {
-       window.location.href = "/Users/Daniel/Documents/frontend/index.html";
+       window.location.href = "index.html";
     }
 });
 
